@@ -79,14 +79,17 @@
 
 
 
+<meta name="description" content="那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云，后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消逝，最后变得像挨了锤的牛一样。可是我过二十一岁生日时没有预见到这一点。我觉得自己会永远生猛下去，什么也锤不了我               $(function(){         $(&quot;#showmsgbox&quot;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="article title">
-<meta property="og:url" content="http://yoursite.com/2019/01/22/article-title/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:title" content="黄金时代">
+<meta property="og:url" content="http://yoursite.com/2018/11/21/article-title/index.html">
+<meta property="og:site_name" content="飞的笔记本">
+<meta property="og:description" content="那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云，后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消逝，最后变得像挨了锤的牛一样。可是我过二十一岁生日时没有预见到这一点。我觉得自己会永远生猛下去，什么也锤不了我               $(function(){         $(&quot;#showmsgbox&quot;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-22T04:59:30.156Z">
+<meta property="og:updated_time" content="2019-01-23T06:04:37.858Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="article title">
+<meta name="twitter:title" content="黄金时代">
+<meta name="twitter:description" content="那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云，后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消逝，最后变得像挨了锤的牛一样。可是我过二十一岁生日时没有预见到这一点。我觉得自己会永远生猛下去，什么也锤不了我               $(function(){         $(&quot;#showmsgbox&quot;">
 
 
 
@@ -116,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/22/article-title/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/21/article-title/">
 
 
 
 
 
-  <title>article title | Hexo</title>
+  <title>黄金时代 | 飞的笔记本</title>
   
 
 
@@ -152,7 +155,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">飞的笔记本</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -229,16 +232,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/22/article-title/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/21/article-title/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="飞也">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="飞的笔记本">
     </span>
 
     
@@ -246,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">article title</h1>
+          <h1 class="post-title" itemprop="name headline">黄金时代</h1>
         
 
         <div class="post-meta">
@@ -258,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-22T12:59:30+08:00">
-                2019-01-22
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-21T12:59:30+08:00">
+                2018-11-21
               </time>
             
 
@@ -296,7 +299,38 @@
       
 
       
-        
+        <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<div class="showbox"><br>    <textarea id="printbox" hidden="hidden"><br>　　那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云，后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消逝，最后变得像挨了锤的牛一样。可是我过二十一岁生日时没有预见到这一点。我觉得自己会永远生猛下去，什么也锤不了我<br>    </textarea><br>    <div id="showmsgbox"></div><br></div>
+
+<script type="text/javascript">
+    $(function(){
+        $("#showmsgbox").text("");
+        var textbox="printbox";
+        showText("printbox", "showmsgbox", 100,"");
+    })
+
+function showText(textbox, showmsgbox, time,str) {
+    var i = 0;
+    var loop;
+
+        str=CheckStr(str,textbox);
+        loop = setInterval(function() {
+            if (i >= str.length || !showmsgbox)
+                clearInterval(loop);
+                var val=$("#"+showmsgbox).html();
+                 val+= str.charAt(i++);
+                 $("#"+showmsgbox).text(val);
+        }, time ? time : 100);
+
+}
+function CheckStr(str,textbox){
+    if(str==""||str==undefined){
+        str=$("#"+textbox).val();
+    }
+    return str;
+}
+</script>
       
     </div>
     
@@ -320,7 +354,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/22/hello-world/" rel="next" title="Hello World">
+              <a href="/2018/10/28/hello-world/" rel="next" title="Hello World">
                 <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
@@ -329,6 +363,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/22/Noname1/" rel="prev" title="article title">
+                article title <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -385,7 +423,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">飞也</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -396,7 +434,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -441,7 +479,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">飞也</span>
 
   
 </div>
