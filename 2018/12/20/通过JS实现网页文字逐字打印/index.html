@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="飞&#39;s Book">
 <meta property="og:description" content="简单实现办法12345678&amp;lt;script language=&quot;javascript&quot;&amp;gt;var i=0;var word=document.getElementById(&quot;Id&quot;).innerHTML;function type()&amp;#123;    document.getElementById(&quot;Id1&quot;).innerText = word.substring(0,i++);&amp;#1">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-23T13:01:46.473Z">
+<meta property="og:updated_time" content="2019-06-17T06:56:27.005Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="通过JS实现网页文字逐字打印">
 <meta name="twitter:description" content="简单实现办法12345678&amp;lt;script language=&quot;javascript&quot;&amp;gt;var i=0;var word=document.getElementById(&quot;Id&quot;).innerHTML;function type()&amp;#123;    document.getElementById(&quot;Id1&quot;).innerText = word.substring(0,i++);&amp;#1">
@@ -300,6 +300,44 @@
 
       
         <h2 id="简单实现办法"><a href="#简单实现办法" class="headerlink" title="简单实现办法"></a>简单实现办法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script language=<span class="string">"javascript"</span>&gt;</span><br><span class="line">var i=0;</span><br><span class="line">var word=document.getElementById(<span class="string">"Id"</span>).innerHTML;</span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">type</span></span>()&#123;</span><br><span class="line">    document.getElementById(<span class="string">"Id1"</span>).innerText = word.substring(0,i++);</span><br><span class="line">&#125;</span><br><span class="line">setInterval(<span class="built_in">type</span>, 500);</span><br></pre></td></tr></table></figure>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="_js/Text.js"></script>
+<div class="showbox">
+    <textarea id="printbox" hidden="hidden">
+　　那一天我二十一岁，在我一生的黄金时代。我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云。后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消失，最后变得像挨了锤的牛一样。可是我过二十一岁生日时没有预见到这一点。我觉得自己会永远生猛下去，什么也锤不了我。
+    </textarea>
+    <div id="showmsgbox">　　</div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        $("#showmsgbox").text("");
+        var textbox="printbox";
+        showText("printbox", "showmsgbox", 100,"");
+    })
+
+function showText(textbox, showmsgbox, time,str) {
+    var i = 0;
+    var loop;
+
+        str=CheckStr(str,textbox);
+        loop = setInterval(function() {
+            if (i >= str.length || !showmsgbox)
+                clearInterval(loop);
+                var val=$("#"+showmsgbox).html();
+                 val+= str.charAt(i++);
+                 $("#"+showmsgbox).text(val);
+        }, time ? time : 100);
+
+}
+function CheckStr(str,textbox){
+    if(str==""||str==undefined){
+        str=$("#"+textbox).val();
+    }
+    return str;
+}
+</script>
+
 <h2 id="复杂实现办法（jQuery）"><a href="#复杂实现办法（jQuery）" class="headerlink" title="复杂实现办法（jQuery）"></a>复杂实现办法（jQuery）</h2>
       
     </div>
