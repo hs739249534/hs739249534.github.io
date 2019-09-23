@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="LINUX初始化 MySQL 1mysqld --initialize 报错[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root![ERROR] Aborting ![mysql]”/Markdown的学习日志（一）1.png” 解决办法：在/e">
+<meta name="description" content="在使用Markdown的时候，有时候想在段落前面添加空格。但是跟其他编辑器不同，普通段落最好不要用空格或制表符来缩进。因为Markdown规定缩进 4 个空格或是 1 个制表符代表建立代码区块。两个常用的解决方法：1.　手动输入空格 （&amp;nbsp;）。分号为英文分号，这个方法还是比较麻烦的。2.　使用全角空格。通过Shift+空格 可切换半/全角">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数据库的DEBUG（一）————安装">
-<meta property="og:url" content="http://yoursite.com/2019/03/15/数据库的DEBUG（一）————安装/index.html">
+<meta property="og:title" content="Markdown的学习日志（一）——空格">
+<meta property="og:url" content="http://yoursite.com/2019/02/28/Markdown的学习日志——空格/index.html">
 <meta property="og:site_name" content="飞&#39;s Book">
-<meta property="og:description" content="LINUX初始化 MySQL 1mysqld --initialize 报错[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root![ERROR] Aborting ![mysql]”/Markdown的学习日志（一）1.png” 解决办法：在/e">
+<meta property="og:description" content="在使用Markdown的时候，有时候想在段落前面添加空格。但是跟其他编辑器不同，普通段落最好不要用空格或制表符来缩进。因为Markdown规定缩进 4 个空格或是 1 个制表符代表建立代码区块。两个常用的解决方法：1.　手动输入空格 （&amp;nbsp;）。分号为英文分号，这个方法还是比较麻烦的。2.　使用全角空格。通过Shift+空格 可切换半/全角">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-17T06:57:35.505Z">
+<meta property="og:updated_time" content="2019-06-12T15:30:26.728Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数据库的DEBUG（一）————安装">
-<meta name="twitter:description" content="LINUX初始化 MySQL 1mysqld --initialize 报错[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root![ERROR] Aborting ![mysql]”/Markdown的学习日志（一）1.png” 解决办法：在/e">
+<meta name="twitter:title" content="Markdown的学习日志（一）——空格">
+<meta name="twitter:description" content="在使用Markdown的时候，有时候想在段落前面添加空格。但是跟其他编辑器不同，普通段落最好不要用空格或制表符来缩进。因为Markdown规定缩进 4 个空格或是 1 个制表符代表建立代码区块。两个常用的解决方法：1.　手动输入空格 （&amp;nbsp;）。分号为英文分号，这个方法还是比较麻烦的。2.　使用全角空格。通过Shift+空格 可切换半/全角">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/15/数据库的DEBUG（一）————安装/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/28/Markdown的学习日志——空格/">
 
 
 
 
 
-  <title>数据库的DEBUG（一）————安装 | 飞's Book</title>
+  <title>Markdown的学习日志（一）——空格 | 飞's Book</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/数据库的DEBUG（一）————安装/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/28/Markdown的学习日志——空格/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="飞也">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">数据库的DEBUG（一）————安装</h1>
+          <h1 class="post-title" itemprop="name headline">Markdown的学习日志（一）——空格</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T23:28:48+08:00">
-                2019-03-15
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-28T23:23:14+08:00">
+                2019-02-28
               </time>
             
 
@@ -299,21 +299,7 @@
       
 
       
-        <h2 id="LINUX"><a href="#LINUX" class="headerlink" title="LINUX"></a>LINUX</h2><p>初始化 MySQL</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize</span><br></pre></td></tr></table></figure>
-<p>报错<br>[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root!<br>[ERROR] Aborting</p>
-<p>![mysql]”/Markdown的学习日志（一）1.png”</p>
-<p>解决办法：在/etc/my.cnf 的[mysqld]下加入<br>user = mysql</p>
-<p>![mysql]”/Markdown的学习日志（一）1.png”</p>
-<h2 id="WINDOWS"><a href="#WINDOWS" class="headerlink" title="WINDOWS"></a>WINDOWS</h2><p>安装时</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld install</span><br></pre></td></tr></table></figure>
-<p>报错</p>
-<p>![mysql]”/Markdown的学习日志（一）1.png”</p>
-<p>以前安装过mysql没有删干净<br>输入sc query mysql，查看一下名为mysql的服务<br>命令sc delete mysql，删除该mysql </p>
-<p>![mysql]”/Markdown的学习日志（一）1.png”</p>
-<p>*查看mysql端口号 show variables like ‘port’;</p>
-<p>远程连接失败<br>ERROR 2003 (HY000): Can’t connect to MySQL server on ‘60.205.207.20’ (10060)<br>我这台服务器是阿里云的，初始状态各端口是不放行的，添加安全组规则放行端口就行了</p>
-<p>远程连接又失败<br>ERROR 1130 (HY000): Host ‘X.X.X.X’ is not allowed to connect to this MySQL server<br>刚安装的mysql服务器出于安全考虑，默认只允许本地登录数据库服务器。<br>mysql -u root -p<br>mysql&gt;use mysql;<br>mysql&gt;update user set host = ‘%’ where user = ‘root’;<br>mysql&gt;flush privileges;<br>mysql&gt;select host, user from user;<br>mysql&gt;quit</p>
+        <p>在使用Markdown的时候，有时候想在段落前面添加空格。但是跟其他编辑器不同，普通段落最好不要用空格或制表符来缩进。因为Markdown规定缩进 4 个空格或是 1 个制表符代表建立代码区块。两个常用的解决方法：<br>1.　手动输入空格 （&nbsp;）。分号为英文分号，这个方法还是比较麻烦的。<br>2.　使用全角空格。通过Shift+空格 可切换半/全角</p>
 
       
     </div>
@@ -338,8 +324,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/28/Markdown的学习日志（一）——空格/" rel="next" title="Markdown的学习日志（一）——空格">
-                <i class="fa fa-chevron-left"></i> Markdown的学习日志（一）——空格
+              <a href="/2019/02/14/破碎故事之心/" rel="next" title="破碎故事之心">
+                <i class="fa fa-chevron-left"></i> 破碎故事之心
               </a>
             
           </div>
@@ -347,6 +333,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/01/初次使用androidstudio的常见问题/" rel="prev" title="初次使用androidstudio的常见问题">
+                初次使用androidstudio的常见问题 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -398,22 +388,13 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">飞也</p>
-              <p class="site-description motion-element" itemprop="description">飞的笔记本</p>
+              <p class="site-description motion-element" itemprop="description">二进制文学爱好者</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -423,7 +404,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -451,22 +432,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#LINUX"><span class="nav-number">1.</span> <span class="nav-text">LINUX</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WINDOWS"><span class="nav-number">2.</span> <span class="nav-text">WINDOWS</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
