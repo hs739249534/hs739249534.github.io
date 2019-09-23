@@ -79,22 +79,23 @@
 
 
 
-<meta name="description" content="LINUX初始化 MySQL 1mysqld --initialize 报错[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root![ERROR] Aborting  解决办法：在/etc/my.cnf 的[mysqld]下加入user = mys">
+<meta name="description" content="安装pygame模块（pygame-1.9.2-cp35-cp35m-win_amd64.whl）时报错输入1python -m pip install --user pygame-1.9.2-cp35-cp35m-win_amd64 ERROR: Could not find a version that satisfies the requirement pygame-1.9.2-cp35-c">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数据库的DEBUG——安装">
-<meta property="og:url" content="http://yoursite.com/2019/03/15/数据库的DEBUG——安装/index.html">
+<meta property="og:title" content="Python安装模块遇到的问题">
+<meta property="og:url" content="http://yoursite.com/2019/07/11/Python（一）/index.html">
 <meta property="og:site_name" content="飞&#39;s Book">
-<meta property="og:description" content="LINUX初始化 MySQL 1mysqld --initialize 报错[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root![ERROR] Aborting  解决办法：在/etc/my.cnf 的[mysqld]下加入user = mys">
+<meta property="og:description" content="安装pygame模块（pygame-1.9.2-cp35-cp35m-win_amd64.whl）时报错输入1python -m pip install --user pygame-1.9.2-cp35-cp35m-win_amd64 ERROR: Could not find a version that satisfies the requirement pygame-1.9.2-cp35-c">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://i1.fuimg.com/700059/645bdd9954d6bb2a.png">
-<meta property="og:image" content="http://i1.fuimg.com/700059/f5ff49ccbf1b617d.png">
-<meta property="og:image" content="http://i1.fuimg.com/700059/f4e1e45ef2133cff.png">
-<meta property="og:image" content="http://i1.fuimg.com/700059/3e0d8d3371609e72.png">
-<meta property="og:updated_time" content="2019-09-23T09:21:07.814Z">
+<meta property="og:image" content="http://i2.tiimg.com/700059/bc9a13fb849db20c.png">
+<meta property="og:image" content="http://i2.tiimg.com/700059/7d53c6d6420f64ce.png">
+<meta property="og:image" content="http://i2.tiimg.com/700059/92c7393ded1c8d7f.png">
+<meta property="og:image" content="http://i2.tiimg.com/700059/4d1071962ff256f3.png">
+<meta property="og:image" content="http://i2.tiimg.com/700059/b7d017cd03a5c4de.png">
+<meta property="og:updated_time" content="2019-09-23T09:34:47.789Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数据库的DEBUG——安装">
-<meta name="twitter:description" content="LINUX初始化 MySQL 1mysqld --initialize 报错[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root![ERROR] Aborting  解决办法：在/etc/my.cnf 的[mysqld]下加入user = mys">
-<meta name="twitter:image" content="http://i1.fuimg.com/700059/645bdd9954d6bb2a.png">
+<meta name="twitter:title" content="Python安装模块遇到的问题">
+<meta name="twitter:description" content="安装pygame模块（pygame-1.9.2-cp35-cp35m-win_amd64.whl）时报错输入1python -m pip install --user pygame-1.9.2-cp35-cp35m-win_amd64 ERROR: Could not find a version that satisfies the requirement pygame-1.9.2-cp35-c">
+<meta name="twitter:image" content="http://i2.tiimg.com/700059/bc9a13fb849db20c.png">
 
 
 
@@ -124,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/15/数据库的DEBUG——安装/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/11/Python（一）/">
 
 
 
 
 
-  <title>数据库的DEBUG——安装 | 飞's Book</title>
+  <title>Python安装模块遇到的问题 | 飞's Book</title>
   
 
 
@@ -237,7 +238,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/数据库的DEBUG——安装/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/11/Python（一）/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="飞也">
@@ -254,7 +255,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">数据库的DEBUG——安装</h1>
+          <h1 class="post-title" itemprop="name headline">Python安装模块遇到的问题</h1>
         
 
         <div class="post-meta">
@@ -266,8 +267,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T23:28:48+08:00">
-                2019-03-15
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-11T10:28:48+08:00">
+                2019-07-11
               </time>
             
 
@@ -304,21 +305,16 @@
       
 
       
-        <h2 id="LINUX"><a href="#LINUX" class="headerlink" title="LINUX"></a>LINUX</h2><p>初始化 MySQL</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize</span><br></pre></td></tr></table></figure>
-<p>报错<br>[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root!<br>[ERROR] Aborting</p>
-<p><img src="http://i1.fuimg.com/700059/645bdd9954d6bb2a.png" alt="mysql"></p>
-<p>解决办法：在/etc/my.cnf 的[mysqld]下加入<br>user = mysql</p>
-<p><img src="http://i1.fuimg.com/700059/f5ff49ccbf1b617d.png" alt="mysql"></p>
-<h2 id="WINDOWS"><a href="#WINDOWS" class="headerlink" title="WINDOWS"></a>WINDOWS</h2><p>安装时</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld install</span><br></pre></td></tr></table></figure>
-<p>报错</p>
-<p><img src="http://i1.fuimg.com/700059/f4e1e45ef2133cff.png" alt="mysql"></p>
-<p>以前安装过mysql没有删干净<br>输入sc query mysql，查看一下名为mysql的服务<br>命令sc delete mysql，删除该mysql </p>
-<p><img src="http://i1.fuimg.com/700059/3e0d8d3371609e72.png" alt="mysql"></p>
-<p>*查看mysql端口号 show variables like ‘port’;</p>
-<p>远程连接失败<br>ERROR 2003 (HY000): Can’t connect to MySQL server on ‘60.205.207.20’ (10060)<br>我这台服务器是阿里云的，初始状态各端口是不放行的，添加安全组规则放行端口就行了</p>
-<p>远程连接又失败<br>ERROR 1130 (HY000): Host ‘X.X.X.X’ is not allowed to connect to this MySQL server<br>刚安装的mysql服务器出于安全考虑，默认只允许本地登录数据库服务器。<br>mysql -u root -p<br>mysql&gt;use mysql;<br>mysql&gt;update user set host = ‘%’ where user = ‘root’;<br>mysql&gt;flush privileges;<br>mysql&gt;select host, user from user;<br>mysql&gt;quit</p>
+        <p>安装pygame模块（pygame-1.9.2-cp35-cp35m-win_amd64.whl）时报错<br>输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install --user pygame-1.9.2-cp35-cp35m-win_amd64</span><br></pre></td></tr></table></figure></p>
+<p>ERROR: Could not find a version that satisfies the requirement pygame-1.9.2-cp35-cp35m-win_amd64 (from versions: none)<br>ERROR: No matching distribution found for pygame-1.9.2-cp35-cp35m-win_amd64<br><img src="http://i2.tiimg.com/700059/bc9a13fb849db20c.png" alt="python"><br>我下载的pygame是一个whl文件<br>whl格式本质上是一个压缩包，里面包含了py文件，以及经过编译的pyd文件。使得可以在不具备编译环境的情况下，选择合适自己的python环境进行安装。</p>
+<p>一开始我并不知道安装whl文件是要先安装wheel的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install wheel</span><br></pre></td></tr></table></figure></p>
+<p>安装完后报错和之前一样<br>仔细比对指令后发现安装文件是要加上后缀名的<br>即<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install --user pygame-1.9.2-cp35-cp35m-win_amd64.whl</span><br></pre></td></tr></table></figure></p>
+<p>但依然报错<br>ERROR: pygame-1.9.2-cp35-cp35m-win_amd64.whl is not a supported wheel on this platform.<br><img src="http://i2.tiimg.com/700059/7d53c6d6420f64ce.png" alt="python"><br>（ps:指令可以简写成pip install pygame-1.9.2-cp35-cp35m-win_amd64.whl）<br>这个错误是因为下载的whl文件的命名格式和系统支持的格式不同导致的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import pip</span><br><span class="line"><span class="built_in">print</span>(pip.pep425tags.get_supported())</span><br></pre></td></tr></table></figure></p>
+<p>通过这两行代码可以查看自己本地pip支持安装的whl文件格式<br>然而我又双叒叕报错了</p>
+<p><font color="red"><br>Traceback (most recent call last):<br>  File “F:/pythontest/alien_invasion/alien_invasion.py”, line 2, in <module><br>    print(pip.pep425tags.get_supported())<br>AttributeError: module ‘pip’ has no attribute ‘pep425tags’<br></module></font><br><img src="http://i2.tiimg.com/700059/92c7393ded1c8d7f.png" alt="python"><br>再次查资料原来python的64位和32位是有区别的</p>
+<p>AMD64<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import pip._internal</span><br><span class="line"><span class="built_in">print</span>(pip._internal.pep425tags.get_supported())</span><br></pre></td></tr></table></figure></p>
+<p>WIN32<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import pip</span><br><span class="line"><span class="built_in">print</span>(pip.pep425tags.get_supported())</span><br></pre></td></tr></table></figure></p>
+<p>这次运行成功<br><img src="http://i2.tiimg.com/700059/4d1071962ff256f3.png" alt="python"><br>我的系统支持的格式不包含cp35-cp35m-win_amd64<br>我将whl文件的名字pygame-1.9.2-cp35-cp35m-win_amd64.whl<br>改为了pygame-1.9.2-cp37-cp37m-win_amd64.whl<br>再次输入安装指令python -m pip install –user pygame-1.9.2-cp37-cp37m-win_amd64.whl安装成功<br><img src="http://i2.tiimg.com/700059/b7d017cd03a5c4de.png" alt="python"></p>
 
       
     </div>
@@ -343,8 +339,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/01/初次使用androidstudio的常见问题/" rel="next" title="初次使用androidstudio的常见问题">
-                <i class="fa fa-chevron-left"></i> 初次使用androidstudio的常见问题
+              <a href="/2019/03/15/数据库的DEBUG——安装/" rel="next" title="数据库的DEBUG——安装">
+                <i class="fa fa-chevron-left"></i> 数据库的DEBUG——安装
               </a>
             
           </div>
@@ -352,10 +348,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/11/Python（一）/" rel="prev" title="Python安装模块遇到的问题">
-                Python安装模块遇到的问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -407,17 +399,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -460,22 +443,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#LINUX"><span class="nav-number">1.</span> <span class="nav-text">LINUX</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WINDOWS"><span class="nav-number">2.</span> <span class="nav-text">WINDOWS</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
