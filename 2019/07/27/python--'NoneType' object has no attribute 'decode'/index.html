@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="1、json.dumps()和json.loads()是json格式处理函数（可以这么理解，json是字符串）　　(1)json.dumps()函数是将一个Python数据类型列表进行json格式的编码（可以这么理解，json.dumps()函数是将字典转化为字符串）　　(2)json.loads()函数是将json格式数据转换为字典（可以这么理解，json.loads()函数是将字符串转化为字典">
+<meta name="description" content="今天做数据可视化的练习时遇到了一个bug，提示是 ‘NoneType’ object has no attribute ‘decode’在python中的None的类型是Nonetype,None是值，Nonetype是类型。同理，数字1是值，int是类型。None 的类型是NoneType , 它没有decode 方法。把repo_dict[‘description’]转为str形式就好了">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python中json文件处理涉及的四个函数json.dumps()和json.loads()、json.dump()和json.load()的区分">
-<meta property="og:url" content="http://yoursite.com/2019/07/20/Python（四）/index.html">
+<meta property="og:title" content="python--&#39;NoneType&#39; object has no attribute &#39;decode&#39;">
+<meta property="og:url" content="http://yoursite.com/2019/07/27/python--'NoneType' object has no attribute 'decode'/index.html">
 <meta property="og:site_name" content="飞&#39;s Book">
-<meta property="og:description" content="1、json.dumps()和json.loads()是json格式处理函数（可以这么理解，json是字符串）　　(1)json.dumps()函数是将一个Python数据类型列表进行json格式的编码（可以这么理解，json.dumps()函数是将字典转化为字符串）　　(2)json.loads()函数是将json格式数据转换为字典（可以这么理解，json.loads()函数是将字符串转化为字典">
+<meta property="og:description" content="今天做数据可视化的练习时遇到了一个bug，提示是 ‘NoneType’ object has no attribute ‘decode’在python中的None的类型是Nonetype,None是值，Nonetype是类型。同理，数字1是值，int是类型。None 的类型是NoneType , 它没有decode 方法。把repo_dict[‘description’]转为str形式就好了">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-23T09:57:37.270Z">
+<meta property="og:updated_time" content="2019-09-23T10:07:50.047Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python中json文件处理涉及的四个函数json.dumps()和json.loads()、json.dump()和json.load()的区分">
-<meta name="twitter:description" content="1、json.dumps()和json.loads()是json格式处理函数（可以这么理解，json是字符串）　　(1)json.dumps()函数是将一个Python数据类型列表进行json格式的编码（可以这么理解，json.dumps()函数是将字典转化为字符串）　　(2)json.loads()函数是将json格式数据转换为字典（可以这么理解，json.loads()函数是将字符串转化为字典">
+<meta name="twitter:title" content="python--&#39;NoneType&#39; object has no attribute &#39;decode&#39;">
+<meta name="twitter:description" content="今天做数据可视化的练习时遇到了一个bug，提示是 ‘NoneType’ object has no attribute ‘decode’在python中的None的类型是Nonetype,None是值，Nonetype是类型。同理，数字1是值，int是类型。None 的类型是NoneType , 它没有decode 方法。把repo_dict[‘description’]转为str形式就好了">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/20/Python（四）/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/27/python--'NoneType' object has no attribute 'decode'/">
 
 
 
 
 
-  <title>python中json文件处理涉及的四个函数json.dumps()和json.loads()、json.dump()和json.load()的区分 | 飞's Book</title>
+  <title>python--'NoneType' object has no attribute 'decode' | 飞's Book</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/20/Python（四）/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/27/python--'NoneType' object has no attribute 'decode'/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="飞也">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">python中json文件处理涉及的四个函数json.dumps()和json.loads()、json.dump()和json.load()的区分</h1>
+          <h1 class="post-title" itemprop="name headline">python--'NoneType' object has no attribute 'decode'</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-20T10:28:48+08:00">
-                2019-07-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-27T10:28:48+08:00">
+                2019-07-27
               </time>
             
 
@@ -299,9 +299,8 @@
       
 
       
-        <p>1、json.dumps()和json.loads()是json格式处理函数（可以这么理解，json是字符串）<br>　　(1)json.dumps()函数是将一个Python数据类型列表进行json格式的编码（可以这么理解，json.dumps()函数是将字典转化为字符串）<br>　　(2)json.loads()函数是将json格式数据转换为字典（可以这么理解，json.loads()函数是将字符串转化为字典）</p>
-<p>2、json.dump()和json.load()主要用来读写json文件函数</p>
-<p>详细：<a href="https://www.cnblogs.com/xiaomingzaixian/p/7286793.html" target="_blank" rel="noopener">https://www.cnblogs.com/xiaomingzaixian/p/7286793.html</a></p>
+        <p>今天做数据可视化的练习时遇到了一个bug，提示是</p>
+<p><font color="red"><br>‘NoneType’ object has no attribute ‘decode’<br></font><br>在python中的None的类型是Nonetype,<br>None是值，Nonetype是类型。同理，数字1是值，int是类型。<br>None 的类型是NoneType , 它没有decode 方法。<br>把repo_dict[‘description’]转为str形式就好了</p>
 
       
     </div>
@@ -326,7 +325,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/20/Python（五）/" rel="next" title="python--lambda">
+              <a href="/2019/07/23/python--lambda/" rel="next" title="python--lambda">
                 <i class="fa fa-chevron-left"></i> python--lambda
               </a>
             
@@ -335,10 +334,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/27/Python（六）/" rel="prev" title="python--'NoneType' object has no attribute 'decode'">
-                python--'NoneType' object has no attribute 'decode' <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

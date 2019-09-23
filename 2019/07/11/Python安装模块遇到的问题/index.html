@@ -79,17 +79,23 @@
 
 
 
-<meta name="description" content="《Python编程从入门到实践》中：1234567&amp;gt;&amp;gt;&amp;gt;a = ([1, 4, 3], [3, 2, 5], [5, 1, 2], [4, 3, 1], [2, 5, 3])&amp;gt;&amp;gt;&amp;gt;sorted(a, key=lambda _: _[0])[[1, 4, 3], [2, 5, 3], [3, 2, 5], [4, 3, 1], [5, 1, 2]]&amp;gt;&amp;gt;">
+<meta name="description" content="安装pygame模块（pygame-1.9.2-cp35-cp35m-win_amd64.whl）时报错输入1python -m pip install --user pygame-1.9.2-cp35-cp35m-win_amd64 ERROR: Could not find a version that satisfies the requirement pygame-1.9.2-cp35-c">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python--lambda">
-<meta property="og:url" content="http://yoursite.com/2019/07/20/Python（五）/index.html">
+<meta property="og:title" content="Python安装模块遇到的问题">
+<meta property="og:url" content="http://yoursite.com/2019/07/11/Python安装模块遇到的问题/index.html">
 <meta property="og:site_name" content="飞&#39;s Book">
-<meta property="og:description" content="《Python编程从入门到实践》中：1234567&amp;gt;&amp;gt;&amp;gt;a = ([1, 4, 3], [3, 2, 5], [5, 1, 2], [4, 3, 1], [2, 5, 3])&amp;gt;&amp;gt;&amp;gt;sorted(a, key=lambda _: _[0])[[1, 4, 3], [2, 5, 3], [3, 2, 5], [4, 3, 1], [5, 1, 2]]&amp;gt;&amp;gt;">
+<meta property="og:description" content="安装pygame模块（pygame-1.9.2-cp35-cp35m-win_amd64.whl）时报错输入1python -m pip install --user pygame-1.9.2-cp35-cp35m-win_amd64 ERROR: Could not find a version that satisfies the requirement pygame-1.9.2-cp35-c">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-23T10:01:40.990Z">
+<meta property="og:image" content="http://i2.tiimg.com/700059/bc9a13fb849db20c.png">
+<meta property="og:image" content="http://i2.tiimg.com/700059/7d53c6d6420f64ce.png">
+<meta property="og:image" content="http://i2.tiimg.com/700059/92c7393ded1c8d7f.png">
+<meta property="og:image" content="http://i2.tiimg.com/700059/4d1071962ff256f3.png">
+<meta property="og:image" content="http://i2.tiimg.com/700059/b7d017cd03a5c4de.png">
+<meta property="og:updated_time" content="2019-09-23T09:34:47.789Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python--lambda">
-<meta name="twitter:description" content="《Python编程从入门到实践》中：1234567&amp;gt;&amp;gt;&amp;gt;a = ([1, 4, 3], [3, 2, 5], [5, 1, 2], [4, 3, 1], [2, 5, 3])&amp;gt;&amp;gt;&amp;gt;sorted(a, key=lambda _: _[0])[[1, 4, 3], [2, 5, 3], [3, 2, 5], [4, 3, 1], [5, 1, 2]]&amp;gt;&amp;gt;">
+<meta name="twitter:title" content="Python安装模块遇到的问题">
+<meta name="twitter:description" content="安装pygame模块（pygame-1.9.2-cp35-cp35m-win_amd64.whl）时报错输入1python -m pip install --user pygame-1.9.2-cp35-cp35m-win_amd64 ERROR: Could not find a version that satisfies the requirement pygame-1.9.2-cp35-c">
+<meta name="twitter:image" content="http://i2.tiimg.com/700059/bc9a13fb849db20c.png">
 
 
 
@@ -119,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/20/Python（五）/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/11/Python安装模块遇到的问题/">
 
 
 
 
 
-  <title>python--lambda | 飞's Book</title>
+  <title>Python安装模块遇到的问题 | 飞's Book</title>
   
 
 
@@ -232,7 +238,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/20/Python（五）/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/11/Python安装模块遇到的问题/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="飞也">
@@ -249,7 +255,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">python--lambda</h1>
+          <h1 class="post-title" itemprop="name headline">Python安装模块遇到的问题</h1>
         
 
         <div class="post-meta">
@@ -261,8 +267,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-20T10:28:48+08:00">
-                2019-07-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-11T10:28:48+08:00">
+                2019-07-11
               </time>
             
 
@@ -299,10 +305,16 @@
       
 
       
-        <p>《Python编程从入门到实践》中：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;a = ([1, 4, 3], [3, 2, 5], [5, 1, 2], [4, 3, 1], [2, 5, 3])</span><br><span class="line">&gt;&gt;&gt;sorted(a, key=lambda _: _[0])</span><br><span class="line">[[1, 4, 3], [2, 5, 3], [3, 2, 5], [4, 3, 1], [5, 1, 2]]</span><br><span class="line">&gt;&gt;&gt;sorted(a, key=lambda _: _[1])</span><br><span class="line">[[5, 1, 2], [3, 2, 5], [4, 3, 1], [1, 4, 3], [2, 5, 3]]</span><br><span class="line">&gt;&gt;&gt;sorted(a, key=lambda _: _[2])</span><br><span class="line">[[4, 3, 1], [5, 1, 2], [1, 4, 3], [2, 5, 3], [3, 2, 5]]</span><br></pre></td></tr></table></figure></p>
-<p>sorted() 函数对所有可迭代的对象进行排序操作，key 是用来进行比较的元素。书写方式如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">key=lambda 元素: 元素[字段索引]</span><br></pre></td></tr></table></figure></p>
-<p>lambda 用于匿名函数，可以免去命名函数的麻烦，上面的代码相当于与：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">def fun(元素):</span><br><span class="line">	<span class="built_in">return</span> 元素[字段索引]</span><br><span class="line">key = fun(元素)</span><br></pre></td></tr></table></figure></p>
-<p>sorted 函数按照字段索引进行排序。</p>
+        <p>安装pygame模块（pygame-1.9.2-cp35-cp35m-win_amd64.whl）时报错<br>输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install --user pygame-1.9.2-cp35-cp35m-win_amd64</span><br></pre></td></tr></table></figure></p>
+<p>ERROR: Could not find a version that satisfies the requirement pygame-1.9.2-cp35-cp35m-win_amd64 (from versions: none)<br>ERROR: No matching distribution found for pygame-1.9.2-cp35-cp35m-win_amd64<br><img src="http://i2.tiimg.com/700059/bc9a13fb849db20c.png" alt="python"><br>我下载的pygame是一个whl文件<br>whl格式本质上是一个压缩包，里面包含了py文件，以及经过编译的pyd文件。使得可以在不具备编译环境的情况下，选择合适自己的python环境进行安装。</p>
+<p>一开始我并不知道安装whl文件是要先安装wheel的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install wheel</span><br></pre></td></tr></table></figure></p>
+<p>安装完后报错和之前一样<br>仔细比对指令后发现安装文件是要加上后缀名的<br>即<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install --user pygame-1.9.2-cp35-cp35m-win_amd64.whl</span><br></pre></td></tr></table></figure></p>
+<p>但依然报错<br>ERROR: pygame-1.9.2-cp35-cp35m-win_amd64.whl is not a supported wheel on this platform.<br><img src="http://i2.tiimg.com/700059/7d53c6d6420f64ce.png" alt="python"><br>（ps:指令可以简写成pip install pygame-1.9.2-cp35-cp35m-win_amd64.whl）<br>这个错误是因为下载的whl文件的命名格式和系统支持的格式不同导致的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import pip</span><br><span class="line"><span class="built_in">print</span>(pip.pep425tags.get_supported())</span><br></pre></td></tr></table></figure></p>
+<p>通过这两行代码可以查看自己本地pip支持安装的whl文件格式<br>然而我又双叒叕报错了</p>
+<p><font color="red"><br>Traceback (most recent call last):<br>  File “F:/pythontest/alien_invasion/alien_invasion.py”, line 2, in <module><br>    print(pip.pep425tags.get_supported())<br>AttributeError: module ‘pip’ has no attribute ‘pep425tags’<br></module></font><br><img src="http://i2.tiimg.com/700059/92c7393ded1c8d7f.png" alt="python"><br>再次查资料原来python的64位和32位是有区别的</p>
+<p>AMD64<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import pip._internal</span><br><span class="line"><span class="built_in">print</span>(pip._internal.pep425tags.get_supported())</span><br></pre></td></tr></table></figure></p>
+<p>WIN32<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import pip</span><br><span class="line"><span class="built_in">print</span>(pip.pep425tags.get_supported())</span><br></pre></td></tr></table></figure></p>
+<p>这次运行成功<br><img src="http://i2.tiimg.com/700059/4d1071962ff256f3.png" alt="python"><br>我的系统支持的格式不包含cp35-cp35m-win_amd64<br>我将whl文件的名字pygame-1.9.2-cp35-cp35m-win_amd64.whl<br>改为了pygame-1.9.2-cp37-cp37m-win_amd64.whl<br>再次输入安装指令python -m pip install –user pygame-1.9.2-cp37-cp37m-win_amd64.whl安装成功<br><img src="http://i2.tiimg.com/700059/b7d017cd03a5c4de.png" alt="python"></p>
 
       
     </div>
@@ -327,8 +339,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/17/Python（三）  /" rel="next" title="Python--__future__包">
-                <i class="fa fa-chevron-left"></i> Python--__future__包
+              <a href="/2019/03/15/数据库的DEBUG——安装/" rel="next" title="数据库的DEBUG——安装">
+                <i class="fa fa-chevron-left"></i> 数据库的DEBUG——安装
               </a>
             
           </div>
@@ -337,8 +349,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/20/Python（四）/" rel="prev" title="python中json文件处理涉及的四个函数json.dumps()和json.loads()、json.dump()和json.load()的区分">
-                python中json文件处理涉及的四个函数json.dumps()和json.loads()、json.dump()和json.load()的区分 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/12/Python安装模块遇到的问题(续)/" rel="prev" title="Python安装模块遇到的问题(续)">
+                Python安装模块遇到的问题(续) <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
