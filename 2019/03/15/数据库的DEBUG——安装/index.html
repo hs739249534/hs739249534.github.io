@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="LINUX初始化 MySQL 1mysqld --initialize 报错[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root![ERROR] Aborting ![mysql]”/Markdown的学习日志（一）1.png” 解决办法：在/e">
+<meta name="description" content="LINUX初始化 MySQL 1mysqld --initialize 报错[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root![ERROR] Aborting ![mysql]”http://i1.fuimg.com/700059/645bd">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据库的DEBUG——安装">
 <meta property="og:url" content="http://yoursite.com/2019/03/15/数据库的DEBUG——安装/index.html">
 <meta property="og:site_name" content="飞&#39;s Book">
-<meta property="og:description" content="LINUX初始化 MySQL 1mysqld --initialize 报错[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root![ERROR] Aborting ![mysql]”/Markdown的学习日志（一）1.png” 解决办法：在/e">
+<meta property="og:description" content="LINUX初始化 MySQL 1mysqld --initialize 报错[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root![ERROR] Aborting ![mysql]”http://i1.fuimg.com/700059/645bd">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-23T08:50:13.841Z">
+<meta property="og:updated_time" content="2019-09-23T09:16:04.957Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据库的DEBUG——安装">
-<meta name="twitter:description" content="LINUX初始化 MySQL 1mysqld --initialize 报错[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root![ERROR] Aborting ![mysql]”/Markdown的学习日志（一）1.png” 解决办法：在/e">
+<meta name="twitter:description" content="LINUX初始化 MySQL 1mysqld --initialize 报错[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root![ERROR] Aborting ![mysql]”http://i1.fuimg.com/700059/645bd">
 
 
 
@@ -302,15 +302,15 @@
         <h2 id="LINUX"><a href="#LINUX" class="headerlink" title="LINUX"></a>LINUX</h2><p>初始化 MySQL</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize</span><br></pre></td></tr></table></figure>
 <p>报错<br>[ERROR] Fatal error: Please read “Security” section of the manual to find out how to run mysqld as root!<br>[ERROR] Aborting</p>
-<p>![mysql]”/Markdown的学习日志（一）1.png”</p>
+<p>![mysql]”<a href="http://i1.fuimg.com/700059/645bdd9954d6bb2a.png&quot;" target="_blank" rel="noopener">http://i1.fuimg.com/700059/645bdd9954d6bb2a.png&quot;</a></p>
 <p>解决办法：在/etc/my.cnf 的[mysqld]下加入<br>user = mysql</p>
-<p>![mysql]”/Markdown的学习日志（一）1.png”</p>
+<p>![mysql]”<a href="http://i1.fuimg.com/700059/f5ff49ccbf1b617d.png&quot;" target="_blank" rel="noopener">http://i1.fuimg.com/700059/f5ff49ccbf1b617d.png&quot;</a></p>
 <h2 id="WINDOWS"><a href="#WINDOWS" class="headerlink" title="WINDOWS"></a>WINDOWS</h2><p>安装时</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld install</span><br></pre></td></tr></table></figure>
 <p>报错</p>
-<p>![mysql]”/Markdown的学习日志（一）1.png”</p>
+<p>![mysql]”<a href="http://i1.fuimg.com/700059/f4e1e45ef2133cff.png&quot;" target="_blank" rel="noopener">http://i1.fuimg.com/700059/f4e1e45ef2133cff.png&quot;</a></p>
 <p>以前安装过mysql没有删干净<br>输入sc query mysql，查看一下名为mysql的服务<br>命令sc delete mysql，删除该mysql </p>
-<p>![mysql]”/Markdown的学习日志（一）1.png”</p>
+<p>![mysql]”<a href="http://i1.fuimg.com/700059/3e0d8d3371609e72.png&quot;" target="_blank" rel="noopener">http://i1.fuimg.com/700059/3e0d8d3371609e72.png&quot;</a></p>
 <p>*查看mysql端口号 show variables like ‘port’;</p>
 <p>远程连接失败<br>ERROR 2003 (HY000): Can’t connect to MySQL server on ‘60.205.207.20’ (10060)<br>我这台服务器是阿里云的，初始状态各端口是不放行的，添加安全组规则放行端口就行了</p>
 <p>远程连接又失败<br>ERROR 1130 (HY000): Host ‘X.X.X.X’ is not allowed to connect to this MySQL server<br>刚安装的mysql服务器出于安全考虑，默认只允许本地登录数据库服务器。<br>mysql -u root -p<br>mysql&gt;use mysql;<br>mysql&gt;update user set host = ‘%’ where user = ‘root’;<br>mysql&gt;flush privileges;<br>mysql&gt;select host, user from user;<br>mysql&gt;quit</p>
