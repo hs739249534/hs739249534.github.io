@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="飞&#39;s Book">
 <meta property="og:description" content="future是py2的概念，对应py2，py3就是future，这是为了在是py2的时候还能用到一些新版本的特性而做成的包。意思禁用py2的import特性改成用py3的import的特性 from future import absolute_import的作用:这是相对引用和绝对引用的概念，从相对导入变成绝对导入，大概意指你每次用import X时候都是在sys.path（即python的搜索">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-23T09:55:02.158Z">
+<meta property="og:updated_time" content="2019-09-23T14:06:35.681Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python--__future__包">
 <meta name="twitter:description" content="future是py2的概念，对应py2，py3就是future，这是为了在是py2的时候还能用到一些新版本的特性而做成的包。意思禁用py2的import特性改成用py3的import的特性 from future import absolute_import的作用:这是相对引用和绝对引用的概念，从相对导入变成绝对导入，大概意指你每次用import X时候都是在sys.path（即python的搜索">
@@ -300,7 +300,7 @@
 
       
         <p><strong>future</strong>是py2的概念，对应py2，py3就是future，这是为了在是py2的时候还能用到一些新版本的特性而做成的包。意思禁用py2的import特性改成用py3的import的特性</p>
-<p>from future import absolute_import<br>的作用:<br>这是相对引用和绝对引用的概念，从相对导入变成绝对导入，大概意指你每次用import X时候都是在sys.path（即python的搜索模块的路径集）里面找X包，这个其实不需要深究，只要知道py3的import用法，加上这句话py2时候也能按照py3的import语法去正常使用。</p>
+<p>from future import absolute_import的作用:<br>这是相对引用和绝对引用的概念，从相对导入变成绝对导入，大概意指你每次用import X时候都是在sys.path（即python的搜索模块的路径集）里面找X包，这个其实不需要深究，只要知道py3的import用法，加上这句话py2时候也能按照py3的import语法去正常使用。</p>
 <p>from future import division的作用：<br>division(精确除法)，当我们没有在程序中导入该特征时，”/“操作符执行的是截断除法(Truncating Division),当我们导入精确除法之后，”/“执行的是精确除法，如下所示：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; 3/4</span><br><span class="line">0</span><br><span class="line">&gt;&gt;&gt; from __future__ import division</span><br><span class="line">&gt;&gt;&gt; 3/4</span><br><span class="line">0.75</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td></tr></table></figure></p>
 <p>导入精确除法后，若要执行截断除法，可以使用”//“操作符：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; 3//4</span><br><span class="line">0</span><br><span class="line">&gt;&gt;&gt; </span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure></p>
 <p>from future import print_function的用法：<br>超前使用python3的print函数。<br>举例如下：<br>在python2.x的环境是使用下面语句，则第二句语法检查通过，第三句语法检查失败<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 from __future__ import print_function</span><br><span class="line">2 <span class="built_in">print</span>(<span class="string">'you are good'</span>)</span><br><span class="line">3 <span class="built_in">print</span> <span class="string">'you are good'</span></span><br></pre></td></tr></table></figure></p>
@@ -408,7 +408,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

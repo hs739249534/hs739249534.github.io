@@ -79,24 +79,17 @@
 
 
 
-<meta name="description" content="昨天安装完pygame模块就心满意足的去睡觉了（其实是打了两把Dota再去睡的）今天准备试着用一下，在PyCharm中导入pygame1import pygame 代码是灰色的，提示我没有这个模块，WTF?!难道我昨天其实一整天都在打Dota，模块是在梦里安的吗？通过指令pip list查询安装过模块，显示我有python模块！原来这是PyCharm中使用的解释器和在终端的解释器不同造成的，有两种">
+<meta name="description" content="一 Watching for file changes with StatReloader（使用状态加载程序监视文件更改 ）  原因：可能是Django版本和Python版本或者PyMysql版本不一致解决：升级或者降级Django版本 二Django2较Django1有许多变动url  path(含正则表达式用re_path)原url函数变成了path123456from django.conf">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python安装模块遇到的问题(续)">
-<meta property="og:url" content="http://yoursite.com/2019/07/12/Python安装模块遇到的问题(续)/index.html">
+<meta property="og:title" content="数据库的DEBUG——安装">
+<meta property="og:url" content="http://yoursite.com/2019/03/15/Django1.0到2.0的踩坑笔记/index.html">
 <meta property="og:site_name" content="飞&#39;s Book">
-<meta property="og:description" content="昨天安装完pygame模块就心满意足的去睡觉了（其实是打了两把Dota再去睡的）今天准备试着用一下，在PyCharm中导入pygame1import pygame 代码是灰色的，提示我没有这个模块，WTF?!难道我昨天其实一整天都在打Dota，模块是在梦里安的吗？通过指令pip list查询安装过模块，显示我有python模块！原来这是PyCharm中使用的解释器和在终端的解释器不同造成的，有两种">
+<meta property="og:description" content="一 Watching for file changes with StatReloader（使用状态加载程序监视文件更改 ）  原因：可能是Django版本和Python版本或者PyMysql版本不一致解决：升级或者降级Django版本 二Django2较Django1有许多变动url  path(含正则表达式用re_path)原url函数变成了path123456from django.conf">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://i2.tiimg.com/700059/e0f444e88444b06d.png">
-<meta property="og:image" content="http://i2.tiimg.com/700059/7fc32193b646cc1d.png">
-<meta property="og:image" content="http://i2.tiimg.com/700059/3c794b57d5c0b4ac.png">
-<meta property="og:image" content="http://i2.tiimg.com/700059/6e4ed199147f2a44.png">
-<meta property="og:image" content="http://i2.tiimg.com/700059/7042c7f2e4d1a8b7.png">
-<meta property="og:image" content="http://i2.tiimg.com/700059/2673ceab48bd5238.png">
-<meta property="og:updated_time" content="2019-09-23T09:45:08.707Z">
+<meta property="og:updated_time" content="2019-09-24T15:08:24.792Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python安装模块遇到的问题(续)">
-<meta name="twitter:description" content="昨天安装完pygame模块就心满意足的去睡觉了（其实是打了两把Dota再去睡的）今天准备试着用一下，在PyCharm中导入pygame1import pygame 代码是灰色的，提示我没有这个模块，WTF?!难道我昨天其实一整天都在打Dota，模块是在梦里安的吗？通过指令pip list查询安装过模块，显示我有python模块！原来这是PyCharm中使用的解释器和在终端的解释器不同造成的，有两种">
-<meta name="twitter:image" content="http://i2.tiimg.com/700059/e0f444e88444b06d.png">
+<meta name="twitter:title" content="数据库的DEBUG——安装">
+<meta name="twitter:description" content="一 Watching for file changes with StatReloader（使用状态加载程序监视文件更改 ）  原因：可能是Django版本和Python版本或者PyMysql版本不一致解决：升级或者降级Django版本 二Django2较Django1有许多变动url  path(含正则表达式用re_path)原url函数变成了path123456from django.conf">
 
 
 
@@ -126,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/12/Python安装模块遇到的问题(续)/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/15/Django1.0到2.0的踩坑笔记/">
 
 
 
 
 
-  <title>Python安装模块遇到的问题(续) | 飞's Book</title>
+  <title>数据库的DEBUG——安装 | 飞's Book</title>
   
 
 
@@ -239,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/12/Python安装模块遇到的问题(续)/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/Django1.0到2.0的踩坑笔记/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="飞也">
@@ -256,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python安装模块遇到的问题(续)</h1>
+          <h1 class="post-title" itemprop="name headline">数据库的DEBUG——安装</h1>
         
 
         <div class="post-meta">
@@ -268,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-12T10:28:48+08:00">
-                2019-07-12
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-15T23:28:48+08:00">
+                2019-03-15
               </time>
             
 
@@ -306,10 +299,20 @@
       
 
       
-        <p>昨天安装完pygame模块就心满意足的去睡觉了（其实是打了两把Dota再去睡的）<br>今天准备试着用一下，在PyCharm中导入pygame<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import pygame</span><br></pre></td></tr></table></figure></p>
-<p>代码是灰色的，提示我没有这个模块，WTF?!难道我昨天其实一整天都在打Dota，模块是在梦里安的吗？<br>通过指令pip list查询安装过模块，显示我有python模块！<br>原来这是PyCharm中使用的解释器和在终端的解释器不同造成的，有两种解决办法</p>
-<h2 id="一-在PyCharm中安装pygame模块"><a href="#一-在PyCharm中安装pygame模块" class="headerlink" title="一.在PyCharm中安装pygame模块"></a>一.在PyCharm中安装pygame模块</h2><p>其实PyCharm有一个很方便的安装模块的功能，不用像昨天那样麻烦<br><img src="http://i2.tiimg.com/700059/e0f444e88444b06d.png" alt="python"><br><img src="http://i2.tiimg.com/700059/7fc32193b646cc1d.png" alt="python" title="点加号"><br><img src="http://i2.tiimg.com/700059/3c794b57d5c0b4ac.png" alt="python" title="点安装即可（我已经安好了所以按钮是灰的）"></p>
-<h2 id="二-使PyCharm的解释器和终端的一致"><a href="#二-使PyCharm的解释器和终端的一致" class="headerlink" title="二.使PyCharm的解释器和终端的一致"></a>二.使PyCharm的解释器和终端的一致</h2><p>先查找终端的解释器的路径<br><img src="http://i2.tiimg.com/700059/6e4ed199147f2a44.png" alt="python"><br><img src="http://i2.tiimg.com/700059/7042c7f2e4d1a8b7.png" alt="python" title="点击Add"><br><img src="http://i2.tiimg.com/700059/2673ceab48bd5238.png" alt="python" title="改成刚才查到的路径即可"></p>
+        <h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p><img src="" alt="图片暂时缺失"></p>
+<font color="red">Watching for file changes with StatReloader（使用状态加载程序监视文件更改 ）</font>
+
+<p>原因：可能是Django版本和Python版本或者PyMysql版本不一致<br>解决：升级或者降级Django版本</p>
+<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p>Django2较Django1有许多变动<br>url  path(含正则表达式用re_path)<br>原url函数变成了path<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">from django.conf.urls import include, url</span><br><span class="line">from django.contrib import admin</span><br><span class="line">urlpatterns = [</span><br><span class="line">url(r<span class="string">'^admin/'</span>, include(admin.site.urls)),</span><br><span class="line">url(r<span class="string">''</span>, include(<span class="string">'learning_logs.urls'</span>, namespace=<span class="string">'learning_logs'</span>)),</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
+<p>变为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">from django.contrib import admin</span><br><span class="line">from django.urls import path, include</span><br><span class="line"></span><br><span class="line">app_name = <span class="string">'learning_logs'</span></span><br><span class="line"></span><br><span class="line">urlpatterns = [</span><br><span class="line">    path(<span class="string">'admin/'</span>, admin.site.urls),</span><br><span class="line">    path(<span class="string">''</span>, include(<span class="string">'learning_logs.urls'</span>, namespace=<span class="string">'learning_logs'</span>)),</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">from django.conf.urls import url</span><br><span class="line">from . import views</span><br><span class="line">urlpatterns = [</span><br><span class="line">    <span class="comment"># index</span></span><br><span class="line">    url(r<span class="string">'^$'</span>, views.index, name=<span class="string">'index'</span>),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>变为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">from django.urls import re_path</span><br><span class="line">from . import views</span><br><span class="line">app_name = <span class="string">'learning_logs'</span></span><br><span class="line">urlpatterns = [</span><br><span class="line">    <span class="comment"># index</span></span><br><span class="line">    re_path(r<span class="string">'^$'</span>, views.index, name=<span class="string">'index'</span>),</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
+<h2 id="三"><a href="#三" class="headerlink" title="三"></a>三</h2><p>django2.0 把原来的 django.core.urlresolvers 包 更改为了 django.urls包<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from django.core.urlresolvers import reverse</span><br></pre></td></tr></table></figure></p>
+<p>变成<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from django.urls import reverse</span><br></pre></td></tr></table></figure></p>
+<h2 id="四"><a href="#四" class="headerlink" title="四"></a>四</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">owner = models.ForeignKey(User)</span><br></pre></td></tr></table></figure>
+<p>改为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">owner = models.ForeignKey(User, on_delete=models.CASCADE)</span><br></pre></td></tr></table></figure></p>
+<p>即在外键值的后面加上 on_delete=models.CASCADE</p>
+<p>在django2.0后，定义外键和一对一关系的时候需要加on_delete选项，此参数为了避免两个表里的数据不一致问题，不然会报错：<br>TypeError: <strong>init</strong>() missing 1 required positional argument: ‘on_delete’<br>举例说明：<br>user=models.OneToOneField(User)<br>owner=models.ForeignKey(UserProfile)<br>需要改成：<br>user=models.OneToOneField(User,on_delete=models.CASCADE) –在老版本这个参数（models.CASCADE）是默认值<br>owner=models.ForeignKey(UserProfile,on_delete=models.CASCADE) –在老版本这个参数（models.CASCADE）是默认值<br>参数说明：<br>on_delete有CASCADE、PROTECT、SET_NULL、SET_DEFAULT、SET()五个可选择的值<br>CASCADE：此值设置，是级联删除。<br>PROTECT：此值设置，是会报完整性错误。<br>SET_NULL：此值设置，会把外键设置为null，前提是允许为null。<br>SET_DEFAULT：此值设置，会把设置为外键的默认值。<br>SET()：此值设置，会调用外面的值，可以是一个函数。<br>一般情况下使用CASCADE就可以了。</p>
 
       
     </div>
@@ -334,8 +337,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/11/Python安装模块遇到的问题/" rel="next" title="Python安装模块遇到的问题">
-                <i class="fa fa-chevron-left"></i> Python安装模块遇到的问题
+              <a href="/2019/03/01/初次使用androidstudio的常见问题/" rel="next" title="初次使用androidstudio的常见问题">
+                <i class="fa fa-chevron-left"></i> 初次使用androidstudio的常见问题
               </a>
             
           </div>
@@ -344,8 +347,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/17/Python--__future__包/" rel="prev" title="Python--__future__包">
-                Python--__future__包 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/15/数据库的DEBUG——安装/" rel="prev" title="数据库的DEBUG——安装">
+                数据库的DEBUG——安装 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -461,7 +464,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-在PyCharm中安装pygame模块"><span class="nav-number">1.</span> <span class="nav-text">一.在PyCharm中安装pygame模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-使PyCharm的解释器和终端的一致"><span class="nav-number">2.</span> <span class="nav-text">二.使PyCharm的解释器和终端的一致</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一"><span class="nav-number">1.</span> <span class="nav-text">一</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二"><span class="nav-number">2.</span> <span class="nav-text">二</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三"><span class="nav-number">3.</span> <span class="nav-text">三</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四"><span class="nav-number">4.</span> <span class="nav-text">四</span></a></li></ol></div>
             
 
           </div>
